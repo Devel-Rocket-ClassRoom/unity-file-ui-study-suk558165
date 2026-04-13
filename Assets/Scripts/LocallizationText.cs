@@ -53,6 +53,23 @@ public class LocallizationText : MonoBehaviour
         text.text = DataTableManager.StringTable.Get(Id);
     }
 
-    [ContextMenu]("ChangeLanguage")
+    [ContextMenu("한국어로 전체 변경")]
+    private void SetAllKorean() => SetAllLanguage(Languages.Korean);
+
+    [ContextMenu("영어로 전체 변경")]
+    private void SetAllEnglish() => SetAllLanguage(Languages.English);
+
+    [ContextMenu("일본어로 전체 변경")]
+    private void SetAllJapanese() => SetAllLanguage(Languages.Japanese);
+
+    private void SetAllLanguage(Languages lang)
+    {
+        editorLang = lang;
+        foreach (var t in FindObjectsByType<LocallizationText>(FindObjectsSortMode.None))
+        {
+            t.editorLang = lang;
+            t.OnChangeLanguage(lang);
+        }
+    }
 #endif
 }
