@@ -1,5 +1,24 @@
 ﻿Id,String
+,
 HELLO,안녕
 BYE,잘가
 YOU DIE,너 죽음
-Fly,날다
+Item1Name,검
+Item2Name,방패
+Item3Name,활 
+Item4Name,물약 
+Item1Desc,이것은 검이다.
+Item2Desc,이것은 방패다.
+Item3Desc,이것은 활이다.
+Item4Desc,이것은 물약이다.
+Char1Name,김전사
+Char2Name,김매직
+Char3Name,김궁수
+Char4Name,김도적
+Char1Job,전사
+Char2Job,워리어
+Char3Job,궁수
+Char4Job,도적
+Stat_Attack,공격력
+Stat_Defend,방어력
+Stat_Health,체력

@@ -6,7 +6,9 @@ public static class DataTableManager
     private static readonly Dictionary<string, DataTable> tables = new Dictionary<string, DataTable>();
 
     public static StringTable StringTable => Get<StringTable>(DatableIds.String);
+    public static ItemTable ItemTable => Get<ItemTable>(DatableIds.Item);
 
+    public static CharacterTable CharacterTable => Get<CharacterTable>(DatableIds.Character);
 #if UNITY_EDITOR
     public static StringTable GetStringTable(Languages lang)
     {
@@ -33,6 +35,13 @@ public static class DataTableManager
         stringTable.Load(DatableIds.String);
         tables.Add(DatableIds.String, stringTable);
 #endif
+        var itemTable = new ItemTable();
+        itemTable.Load(DatableIds.Item);
+        tables.Add(DatableIds.Item, itemTable);
+
+        var characterTable = new CharacterTable();
+        characterTable.Load(DatableIds.Character);
+        tables.Add(DatableIds.Character, characterTable);
     }
 
     public static T Get<T>(string Id) where T : DataTable
@@ -59,6 +68,6 @@ public static class DataTableManager
 #endif
 
         foreach (var t in Object.FindObjectsByType<LocallizationText>(FindObjectsSortMode.None))
-            t.OnChangedId();
+            if (t != null) t.OnChangedId();
     }
 }

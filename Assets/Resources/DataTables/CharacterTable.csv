@@ -1,0 +1,5 @@
+﻿Id,Name,JOB,Attack,Dffend,Health
+class1,Char1Name,Char1Job,20,20,100
+class2,Char2Name,Char2Job,5,5,100
+class3,Char3Name,Char3Job,10,5,100
+class4,Char4Name,Char4Job,15,5,100

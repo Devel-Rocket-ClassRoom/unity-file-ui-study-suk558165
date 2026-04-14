@@ -1,5 +1,0 @@
-﻿Id,String
-HELLO,おはよう
-BYE,さようなら
-YOU DIE,しぬ
-Fly,とぶ

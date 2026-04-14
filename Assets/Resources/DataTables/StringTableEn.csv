@@ -1,5 +1,23 @@
-Id,String
-HELLO,Hello
-BYE,BYE BYE
-YOU DIE,YOU DIE
-Fly,FLY
+﻿Id,String
+HELLO,Hello~
+BYE,Bye~
+YOU DIE,You Die...
+Item1Name,Sword
+Item2Name,Shield
+Item3Name,Bow
+Item4Name,Potion
+Item1Desc,This is a sword.
+Item2Desc,This is a shield.
+Item3Desc,This is a bow.
+Item4Desc,This is a potion.
+Char1Name,Kim Warrior
+Char2Name,Kim Magic
+Char3Name,Kim Archer
+Char4Name,Kim Rogue
+Char1Job,Warrior
+Char2Job,Mage
+Char3Job,Archer
+Char4Job,Rogue
+Stat_Attack,Attack
+Stat_Defend,Defense
+Stat_Health,Health
