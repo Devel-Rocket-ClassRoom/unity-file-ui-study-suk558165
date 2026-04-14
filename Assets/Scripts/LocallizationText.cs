@@ -53,6 +53,6 @@ public class LocallizationText : MonoBehaviour
         text.text = DataTableManager.StringTable.Get(Id);
     }
 
-    [ContextMenu]("ChangeLanguage")
+    
 #endif
 }

@@ -1,0 +1,5 @@
+﻿Id,Name,JOB,Attack,Dffend,Health
+class1,전사,Warrior,20,20,100
+class2,마법사,Magician,5,5,100
+class3,궁수 ,Archer,10,5,100
+class4,도적,Rogue,15,5,100
