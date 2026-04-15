@@ -10,3 +10,14 @@ Item1Desc,これは剣だ。
 Item2Desc,これは盾だ。
 Item3Desc,これは弓だ。
 Item4Desc,これはポーションだ。
+Char1Name,キムせんし
+Char2Name,キムまほう
+Char3Name,キムゆみて
+Char4Name,キムとうぞく
+Char1Job,せんし
+Char2Job,ウォリアー
+Char3Job,ゆみて
+Char4Job,とうぞく
+Stat_Attack,こうげきりょく
+Stat_Defend,ぼうぎょりょく
+Stat_Health,たいりょく
