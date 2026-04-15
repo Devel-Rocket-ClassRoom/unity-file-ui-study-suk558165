@@ -1,47 +1,110 @@
-using Newtonsoft.Json;                  
-using System.Collections.Generic;      
-using System.IO;                        
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+
+[System.Serializable]
 public class SomeClass
 {
-    public int prefabIndex;     // 어떤 프리팹인지 인덱스
-    public Vector3 pos;         // 위치
-    public Quaternion rot;      // 회전
-    public Vector3 scale;       // 크기
-    public Color color;         // 색상
+    public Vector3 pos;
+    public Quaternion rot;
+    public Vector3 scale;
+    public Color color;
 }
+
+[System.Serializable]
+public class ObjectSaveData
+{
+    public string prefabName;
+    public Vector3 pos;
+    public Quaternion rot;
+    public Vector3 scale;
+    public Color color;
+}
+
 
 public class JsonTest2 : MonoBehaviour
 {
-    public string fileName = "test.json";   // 저장 파일명
+    public string fileName = "test.json";
+    public string FullFilePath => Path.Combine(Application.persistentDataPath, "JsonTest", fileName);
 
-    // 저장 경로: Application.persistentDataPath/JsonTest/test.json
-    public string FileFullPath => Path.Combine(Application.persistentDataPath, "JsonTest", fileName);
+    public string[] prefabNames =
+    {
+        "Cube",
+        "Sphere",
+        "Capsule",
+        "Cylinder",
+    };
 
-    private JsonSerializerSettings jsonSettings;    // 직렬화 설정
+    private JsonSerializerSettings jsonSettings;
 
     private void Awake()
     {
-        jsonSettings = new JsonSerializerSettings();                    // 설정 인스턴스 생성
-        jsonSettings.Formatting = Formatting.Indented;                  // JSON 들여쓰기 포맷
-        jsonSettings.Converters.Add(new Vector3Converter());            // Vector3 커스텀 컨버터 등록
-        jsonSettings.Converters.Add(new QuaternionConverter());         // Quaternion 커스텀 컨버터 등록
-        jsonSettings.Converters.Add(new ColorConverter());              // Color 커스텀 컨버터 등록
+        jsonSettings = new JsonSerializerSettings();
+        jsonSettings.Formatting = Formatting.Indented;
+        jsonSettings.Converters.Add(new Vector3Converter());
+        jsonSettings.Converters.Add(new QuaternionConverter());
+        jsonSettings.Converters.Add(new ColorConverter());
     }
 
-    // SomeClass 리스트를 JSON으로 직렬화 후 파일 저장
-    public void Save(List<SomeClass> ob)
+    private void CreateRandomObject()
     {
-        string dir = Path.GetDirectoryName(FileFullPath);               // 폴더 경로 추출
-        if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);    // 폴더 없으면 생성
-        var json = JsonConvert.SerializeObject(ob, jsonSettings);       // 리스트를 JSON 문자열로 변환
-        File.WriteAllText(FileFullPath, json);                          // 파일에 JSON 저장
+        var prefabName = prefabNames[Random.Range(0, prefabNames.Length)];
+        var prefab = Resources.Load<JsonTestObject>(prefabName);
+        var obj = Instantiate(prefab);
+        obj.prefabName = prefabName;
+        obj.transform.position = Random.insideUnitSphere * 10f;
+        obj.transform.rotation = Random.rotation;
+        obj.transform.localScale = Vector3.one * Random.Range(0.5f, 3f);
+        obj.GetComponent<Renderer>().material.color = Random.ColorHSV();
     }
 
-    // 파일에서 JSON 읽어 SomeClass 리스트로 역직렬화 후 반환
-    public List<SomeClass> Load()
+    public void OnCreate()
     {
-        string json = File.ReadAllText(FileFullPath);                           // 파일에서 JSON 문자열 읽기
-        return JsonConvert.DeserializeObject<List<SomeClass>>(json, jsonSettings); // JSON을 리스트로 변환 후 반환
+        for (int i = 0; i < 10; ++i)
+        {
+            CreateRandomObject();
+            Debug.Log(FullFilePath);
+        }
+
+    }
+
+    public void OnClear()
+    {
+        var objs = GameObject.FindGameObjectsWithTag("TestObject");
+        foreach (var obj in objs)
+        {
+            Destroy(obj);
+        }
+    }
+
+    public void OnSave()
+    {
+        var saveList = new List<ObjectSaveData>();
+        var objs = GameObject.FindGameObjectsWithTag("TestObject");
+        foreach (var obj in objs)
+        {
+            var jsonTestObj = obj.GetComponent<JsonTestObject>();
+            saveList.Add(jsonTestObj.GetSaveData());
+        }
+        var json = JsonConvert.SerializeObject(saveList, jsonSettings);
+        File.WriteAllText(FullFilePath, json);
+    }
+
+    public void OnLoad()
+    {
+        OnClear();
+
+        var json = File.ReadAllText(FullFilePath);
+        var saveList = JsonConvert.DeserializeObject<List<ObjectSaveData>>(json, jsonSettings);
+
+        foreach (var saveData in saveList)
+        {
+            var prefab = Resources.Load<JsonTestObject>(saveData.prefabName);
+            var jsonTestObj = Instantiate(prefab);
+            jsonTestObj.Set(saveData);
+            Debug.Log(saveData.prefabName);
+        }
+       
     }
 }
