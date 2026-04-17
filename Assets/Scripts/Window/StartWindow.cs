@@ -13,13 +13,15 @@ public class StartWindow : GenericWindow
     public bool canContinue;
     private WindowManager windowManager;
 
+    
+
     private void Awake()
     {
         continueButton.onClick.AddListener(OnContinue);
         startButton.onClick.AddListener(OnNewGame);
         optionButton.onClick.AddListener(OnOption);
     }
-    public void Init(WindowManager mgr)
+    public override void Init(WindowManager mgr)
     {
         windowManager = mgr;
     }
@@ -40,6 +42,7 @@ public class StartWindow : GenericWindow
 
     public void OnContinue()
     {
+        windowManager.Open(1); // StartWindow id
         Debug.Log("버튼 누름");
 
     }

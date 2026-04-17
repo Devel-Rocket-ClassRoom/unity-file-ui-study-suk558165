@@ -9,7 +9,8 @@ public class GenericWindow : MonoBehaviour
     public virtual void Open()
     {
         gameObject.SetActive(true);
-        EventSystem.current.SetSelectedGameObject(firstSelectrd);
+        if (firstSelectrd != null)
+            EventSystem.current.SetSelectedGameObject(firstSelectrd);
     }
     public virtual void Close()
     {

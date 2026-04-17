@@ -7,7 +7,7 @@ public class WindowManager : MonoBehaviour
     public int currentWindowId;
 
     public int defaultWindowId;
-    protected WindowManager windowManager;
+    public WindowManager windowManager;
 
     private void Awake()
     {
