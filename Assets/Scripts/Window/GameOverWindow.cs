@@ -152,7 +152,7 @@ public class GameOverWindow : GenericWindow
 
     public void OnNext()
     {
-        windowManager.Open(0); // 0번 윈도우(StartWindow)로 전환
+        windowManager.Open(0); 
     }
 
     public override void Init(WindowManager mgr)
