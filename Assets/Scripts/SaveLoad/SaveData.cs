@@ -55,6 +55,8 @@ public class SaveDataV3 : SaveDataV2
     public new string Name { get; set; } = string.Empty; // 플레이어 이름
     public new int Gold { get; set; } = 0; // 골드 (V2 신규 필드)
 
+    public int Difficulty { get; set; } = 0;
+
     public SaveDataV3()
     {
         Version = 3; // V2로 초기화

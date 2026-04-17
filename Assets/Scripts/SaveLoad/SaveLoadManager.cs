@@ -6,7 +6,7 @@ using SaveDataVC = SaveDataV3;
 
 public class SaveLoadManager
 {
-    public static SaveMode mode { get; set; } = SaveMode.Encrypted;
+    public static SaveMode mode { get; set; } = SaveMode.Text;
 
     public static bool Save(int slot = 0) => Save(slot, mode);
     public static int SaveDataVersion { get; } = 3;

@@ -152,7 +152,7 @@ public class GameOverWindow : GenericWindow
 
     public void OnNext()
     {
-        windowManager.Open(0); 
+        windowManager.Open(2); 
     }
 
     public override void Init(WindowManager mgr)
