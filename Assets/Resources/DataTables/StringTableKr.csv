@@ -22,3 +22,38 @@ Char4Job,도적
 Stat_Attack,공격력
 Stat_Defend,방어력
 Stat_Health,체력
+NAME,이름
+JOB,직업
+DESC,설명
+TYPE,타입
+VALUE,밸류
+COST,코스트
+NONE,없음
+WEAPON,무기
+EQUIP,장비
+CONSUMABLE,소모품
+SORT_ATTACK_ASC,공격력 (오름차순)
+SORT_ATTACK_DESC,공격력 (내림차순)
+SORT_DEFEND_ASC,방어력 (오름차순)
+SORT_DEFEND_DESC,방어력 (내림차순)
+SORT_HEALTH_ASC,체력 (오름차순)
+SORT_HEALTH_DESC,체력 (내림차순)
+FILTER_HIGH_ATTACK,공격력10이상
+FILTER_LOW_ATTACK,공격력10이하
+SORT_CREATION_ASC,날짜 (오름차순)
+SORT_CREATION_DESC,날짜 (내림차순)
+SORT_NAME_ASC,이름 (오름차순)
+SORT_NAME_DESC,이름(내림차순)
+SORT_VALUE_ASC,밸류( 오름차순)
+SORT_VALUE_DESC,밸류 (내림차순)
+SORT_COST_ASC,가격 (오름차순)
+SORT_COST_DESC,가격 (내림차순)
+FILTER_NONE,전체
+FILTER_WEAPON,무기
+FILTER_EQUIP,장비
+FILTER_CONSUMABLE,소모품
+FILTER_NONE_CONSUMABLE,소모품 제외
+BTN_ADD,아이템 추가
+BTN_REMOVE,아이템 삭제
+BTN_SAVE,저장
+BTN_LOAD,불러오기
