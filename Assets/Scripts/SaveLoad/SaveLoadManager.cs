@@ -22,10 +22,16 @@ public class SaveLoadManager
     // 정적 생성자 — 클래스 최초 접근 시 자동으로 실행되어 세이브 파일 로드 시도
     static SaveLoadManager()
     {
+<<<<<<< HEAD
         var path = GetSaveFilePath(0);
         if (File.Exists(path) && !Load()) // 파일이 존재하는데 로드에 실패한 경우만 에러
         {
             Debug.LogError("세이브 파일 로드 실패!");
+=======
+        if(!Load()) // 세이브 파일 로드 실패 시
+        {
+            Debug.LogError("세이브 파일 로드 실패!"); // 에러 메시지를 Unity 콘솔에 출력
+>>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
         }
     }
     // 슬롯별 세이브 파일 이름 목록 (인덱스 0 = 자동저장, 1~3 = 수동 슬롯)

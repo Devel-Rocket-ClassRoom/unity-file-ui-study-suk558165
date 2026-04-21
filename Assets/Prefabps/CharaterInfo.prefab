@@ -70,7 +70,11 @@ GameObject:
   - component: {fileID: 5484427843476586701}
   - component: {fileID: 4663169236333354993}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: Deffend
+=======
+  m_Name: Value
+>>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,7 +127,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_text: "\uBC29\uC5B4\uB825"
+=======
+  m_text: "\uBCA8\uB958"
+>>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1e7db5adb85c5f243b973f392ad67cf6, type: 2}
   m_sharedMaterial: {fileID: 6593271907074916676, guid: 1e7db5adb85c5f243b973f392ad67cf6, type: 2}
@@ -365,7 +373,11 @@ GameObject:
   - component: {fileID: 2016624419861396136}
   - component: {fileID: 793567206840506563}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: Job
+=======
+  m_Name: Desc
+>>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -418,7 +430,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_text: "\uC9C1\uC5C5"
+=======
+  m_text: "\uC124\uBA85"
+>>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1e7db5adb85c5f243b973f392ad67cf6, type: 2}
   m_sharedMaterial: {fileID: 6593271907074916676, guid: 1e7db5adb85c5f243b973f392ad67cf6, type: 2}
@@ -597,7 +613,10 @@ GameObject:
   - component: {fileID: 3642993350570424937}
   - component: {fileID: 8031774196424821112}
   - component: {fileID: 1179370447168374844}
+<<<<<<< HEAD
   - component: {fileID: 4687597558004509817}
+=======
+>>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
   m_Layer: 5
   m_Name: CharaterInfo
   m_TagString: Untagged
@@ -694,6 +713,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+<<<<<<< HEAD
 --- !u!114 &4687597558004509817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,6 +732,8 @@ MonoBehaviour:
   textAttack: {fileID: 2954264378036527561}
   textDefend: {fileID: 5484427843476586701}
   textHealth: {fileID: 2694534403954947167}
+=======
+>>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
 --- !u!1 &7730729609104645458
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,7 +747,11 @@ GameObject:
   - component: {fileID: 2694534403954947167}
   - component: {fileID: 4009368256709322198}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: Health
+=======
+  m_Name: Cost
+>>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -778,7 +804,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_text: "\uCCB4\uB825"
+=======
+  m_text: "\uCF54\uC2A4\uD2B8"
+>>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1e7db5adb85c5f243b973f392ad67cf6, type: 2}
   m_sharedMaterial: {fileID: 6593271907074916676, guid: 1e7db5adb85c5f243b973f392ad67cf6, type: 2}
@@ -883,7 +913,11 @@ GameObject:
   - component: {fileID: 2954264378036527561}
   - component: {fileID: 5146268753488378129}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: Attack
+=======
+  m_Name: Type
+>>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -936,7 +970,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_text: "\uACF5\uACA9\uB825"
+=======
+  m_text: "\uD0C0\uC785"
+>>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1e7db5adb85c5f243b973f392ad67cf6, type: 2}
   m_sharedMaterial: {fileID: 6593271907074916676, guid: 1e7db5adb85c5f243b973f392ad67cf6, type: 2}
