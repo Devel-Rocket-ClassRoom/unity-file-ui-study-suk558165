@@ -1,10 +1,10 @@
-using UnityEngine;
-using UnityEngine.EventSystems;
-using TMPro;
-using UnityEngine.UI;
-using System.Collections;
+using UnityEngine; // Unity 엔진 기본 기능 사용
+using UnityEngine.EventSystems; // UI 이벤트 시스템 기능 사용
+using TMPro; // TextMeshPro UI 텍스트 컴포넌트 사용
+using UnityEngine.UI; // Unity 기본 UI 버튼 컴포넌트 사용
+using System.Collections; // 코루틴(IEnumerator) 사용
 
-public class GameOverWindow : GenericWindow
+public class GameOverWindow : GenericWindow // 게임 오버 화면을 담당하는 클래스 (GenericWindow 상속)
 {
     public TextMeshProUGUI leftStatLabel;   // 왼쪽 스탯 이름 텍스트
     public TextMeshProUGUI leftStatValue;   // 왼쪽 스탯 값 텍스트
@@ -29,14 +29,14 @@ public class GameOverWindow : GenericWindow
 
     private int finalScore;                // 최종 스코어
 
-    private void Awake()
+    private void Awake() // 오브젝트 초기화 시 배열 및 버튼 이벤트 등록
     {
         statsLabels = new TextMeshProUGUI[] { leftStatLabel, rightStatLabel }; // 라벨 배열 초기화
         statsValue = new TextMeshProUGUI[] { leftStatValue, rightStatValue };  // 값 배열 초기화
         nextbutton.onClick.AddListener(OnNext); // NEXT 버튼 클릭 시 OnNext 등록
     }
 
-    public override void Open()
+    public override void Open() // 창을 열 때 이전 코루틴을 정리하고 연출을 시작하는 메서드
     {
         if (routine != null)
         {
@@ -97,7 +97,7 @@ public class GameOverWindow : GenericWindow
     //    scoreValue.text = target.ToString("0000000000"); // 최종값 확정 출력
     //}
 
-    private void ResetStats()
+    private void ResetStats() // 스탯 값을 랜덤으로 생성하고 텍스트를 초기화하는 메서드
     {
         for (int i = 0; i < statsRolls.Length; ++i)
             statsRolls[i] = Random.Range(0, 1000); // 스탯 0~999 랜덤 생성
@@ -113,7 +113,7 @@ public class GameOverWindow : GenericWindow
         scoreValue.text = $"{0:D9}";               // 스코어 0으로 초기화
     }
 
-    private IEnumerator CoPlayGameOverRoutine()
+    private IEnumerator CoPlayGameOverRoutine() // 스탯을 순차 출력하고 스코어를 카운트업하는 연출 코루틴
     {
         for (int i = 0; i < totalStats; i++)
         {
@@ -137,10 +137,10 @@ public class GameOverWindow : GenericWindow
         }
 
         scoreValue.text = $"{finalScore:D9}"; // 최종값 확정 출력
-        routine = null;
+        routine = null; // 코루틴 참조 초기화
     }
 
-    public override void Close()
+    public override void Close() // 창을 닫을 때 실행 중인 코루틴을 정리하는 메서드
     {
         if (routine != null)
         {
@@ -150,12 +150,12 @@ public class GameOverWindow : GenericWindow
         base.Close(); // 오브젝트 비활성화
     }
 
-    public void OnNext()
+    public void OnNext() // NEXT 버튼 클릭 시 다음 창으로 전환하는 메서드
     {
-        windowManager.Open(2); 
+        windowManager.Open(2); // 인덱스 2번 창으로 전환
     }
 
-    public override void Init(WindowManager mgr)
+    public override void Init(WindowManager mgr) // WindowManager 참조를 전달받아 초기화
     {
         windowManager = mgr; // WindowManager 참조 저장
     }

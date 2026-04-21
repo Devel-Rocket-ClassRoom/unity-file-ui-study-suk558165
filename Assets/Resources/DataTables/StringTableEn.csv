@@ -21,3 +21,37 @@ Char4Job,Rogue
 Stat_Attack,Attack
 Stat_Defend,Defense
 Stat_Health,Health
+NAME,Name
+JOB,Job
+DESC,Description
+TYPE,Type
+VALUE,Value
+COST,Cost
+WEAPON,Weapon
+EQUIP,Equipment
+CONSUMABLE,Consumable
+SORT_ATTACK_ASC,Attack↑
+SORT_ATTACK_DESC,Attack↓
+SORT_DEFEND_ASC,Defense↑
+SORT_DEFEND_DESC,Defense↓
+SORT_HEALTH_ASC,Health↑
+SORT_HEALTH_DESC,Health↓
+FILTER_HIGH_ATTACK,High Attack
+FILTER_LOW_ATTACK,Low Attack
+SORT_CREATION_ASC,Creation↑
+SORT_CREATION_DESC,Creation↓
+SORT_NAME_ASC,Name↑
+SORT_NAME_DESC,Name↓
+SORT_VALUE_ASC,Value↑
+SORT_VALUE_DESC,Value↓
+SORT_COST_ASC,Cost↑
+SORT_COST_DESC,Cost↓
+FILTER_NONE,All
+FILTER_WEAPON,Weapon
+FILTER_EQUIP,Equip
+FILTER_CONSUMABLE,Consumable
+FILTER_NONE_CONSUMABLE,Non-Consumable
+BTN_ADD,Add Item
+BTN_REMOVE,Remove
+BTN_SAVE,Save
+BTN_LOAD,Load
