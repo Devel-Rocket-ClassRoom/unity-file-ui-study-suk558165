@@ -1,5 +1,5 @@
-using UnityEngine; // Unity 엔진 기본 기능 사용
-using TMPro; // TextMeshPro UI 컴포넌트 사용
+using UnityEngine;
+using TMPro;
 public class StringTableText : MonoBehaviour // 문자열 테이블에서 텍스트를 가져와 표시하는 컴포넌트
 {
     public string Id; // 문자열 테이블에서 참조할 키 ID

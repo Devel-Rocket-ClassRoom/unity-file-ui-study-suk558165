@@ -1,6 +1,6 @@
-using TMPro; // TextMeshPro 텍스트 컴포넌트 사용을 위한 네임스페이스
-using UnityEngine; // Unity 엔진 기본 기능 사용을 위한 네임스페이스
-using UnityEngine.UI; // Unity UI 컴포넌트(Image, Button 등) 사용을 위한 네임스페이스
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 // 인벤토리의 개별 슬롯 UI(아이콘, 이름, 버튼)를 관리하는 클래스
 public class UiInvenSlot : MonoBehaviour

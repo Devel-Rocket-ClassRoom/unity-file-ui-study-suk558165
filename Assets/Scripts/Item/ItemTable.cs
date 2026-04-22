@@ -1,5 +1,5 @@
-using System.Collections.Generic; // 제네릭 컬렉션(Dictionary, List 등) 사용을 위한 네임스페이스
-using UnityEngine; // Unity 엔진 기본 기능(Resources, Debug 등) 사용을 위한 네임스페이스
+using System.Collections.Generic;
+using UnityEngine;
 
 // 아이템 종류를 나타내는 열거형
 public enum ItemTypes  // ItemTytpes 오타 수정

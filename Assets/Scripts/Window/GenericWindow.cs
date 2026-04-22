@@ -1,5 +1,5 @@
-using UnityEngine; // Unity 엔진 기본 기능 사용
-using UnityEngine.EventSystems; // UI 이벤트 시스템 기능 사용 (포커스 설정 등)
+using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class GenericWindow : MonoBehaviour // 모든 창(Window)의 기반이 되는 추상 클래스
 {

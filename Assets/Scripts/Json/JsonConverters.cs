@@ -1,7 +1,7 @@
-using UnityEngine; // Unity의 핵심 타입(Vector3, Quaternion, Color 등)을 위한 라이브러리
-using Newtonsoft.Json; // JSON 직렬화/역직렬화를 위한 Newtonsoft.Json 라이브러리
-using System; // Type 등 기본 시스템 기능을 위한 라이브러리
-using Newtonsoft.Json.Linq; // JSON 객체를 동적으로 파싱하기 위한 JObject, JToken 등을 포함하는 라이브러리
+using UnityEngine;
+using Newtonsoft.Json;
+using System;
+using Newtonsoft.Json.Linq;
 
 // CharacterData를 JSON에서 ID 문자열로 읽고 쓰는 커스텀 JsonConverter 클래스
 public class CharacterDataConverter : JsonConverter<CharacterData>

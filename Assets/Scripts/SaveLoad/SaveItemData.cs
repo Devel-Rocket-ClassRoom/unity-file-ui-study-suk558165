@@ -1,5 +1,5 @@
-using System; // 기본 .NET 시스템 라이브러리 (Guid, DateTime 등)
-using Newtonsoft.Json; // Json.NET 라이브러리 — JSON 직렬화/역직렬화 및 커스텀 컨버터 지원
+using System;
+using Newtonsoft.Json;
 
 [Serializable] // JSON 직렬화/역직렬화 가능하도록 표시
 // 인벤토리에 저장되는 개별 아이템 인스턴스 데이터를 담는 클래스

@@ -1,4 +1,4 @@
-using UnityEngine; // Unity 엔진 기본 기능 사용
+using UnityEngine;
 
 public class WindowManager : MonoBehaviour // 여러 창(Window)의 열기/닫기를 관리하는 매니저 클래스
 {

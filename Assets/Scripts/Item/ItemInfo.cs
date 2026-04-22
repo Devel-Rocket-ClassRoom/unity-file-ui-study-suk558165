@@ -1,6 +1,6 @@
-using TMPro; // TextMeshPro 텍스트 컴포넌트 사용을 위한 네임스페이스
-using UnityEngine; // Unity 엔진 기본 기능 사용을 위한 네임스페이스
-using UnityEngine.UI; // Unity UI 컴포넌트(Image 등) 사용을 위한 네임스페이스
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 // 개별 아이템 슬롯의 UI(이름, 아이콘)를 관리하고 클릭 이벤트를 처리하는 클래스
 public class ItemInpo : MonoBehaviour

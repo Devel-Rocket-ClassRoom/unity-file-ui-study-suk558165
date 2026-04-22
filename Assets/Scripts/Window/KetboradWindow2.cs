@@ -1,8 +1,8 @@
-using System.Collections.Generic; // List 등 제네릭 컬렉션 사용
-using System.Text; // StringBuilder 문자열 조작 기능 사용
-using TMPro; // TextMeshPro UI 텍스트 컴포넌트 사용
-using UnityEngine; // Unity 엔진 기본 기능 사용
-using UnityEngine.UI; // Unity 기본 UI 버튼 컴포넌트 사용
+using System.Collections.Generic;
+using System.Text;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class KetboradWindow2 : GenericWindow // 커스텀 키보드 입력 창을 담당하는 클래스 (GenericWindow 상속)
 {

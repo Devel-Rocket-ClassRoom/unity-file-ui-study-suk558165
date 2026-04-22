@@ -1,5 +1,5 @@
-using TMPro; // TextMeshPro UI 컴포넌트 사용
-using UnityEngine; // Unity 엔진 기본 기능 사용
+using TMPro;
+using UnityEngine;
 
 public class LanguageSelector : MonoBehaviour // 드롭다운으로 언어를 선택하는 컴포넌트
 {

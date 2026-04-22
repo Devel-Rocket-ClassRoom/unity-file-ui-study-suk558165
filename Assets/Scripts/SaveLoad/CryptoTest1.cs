@@ -1,4 +1,4 @@
-using UnityEngine; // Unity 엔진 핵심 라이브러리 (MonoBehaviour, Input, Debug 등)
+using UnityEngine;
 
 // AES 암호화/복호화 기능을 키 입력으로 테스트하는 MonoBehaviour 클래스
 public class CryptoTest1 : MonoBehaviour

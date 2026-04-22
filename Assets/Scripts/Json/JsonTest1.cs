@@ -1,8 +1,8 @@
-using Newtonsoft.Json; // JSON 직렬화/역직렬화를 위한 Newtonsoft.Json 라이브러리
-using System; // Serializable 등 기본 시스템 기능을 위한 라이브러리
-using System.IO; // 파일 입출력(읽기/쓰기/경로) 기능을 위한 라이브러리
-using Unity.VisualScripting; // Unity Visual Scripting 기능을 위한 라이브러리
-using UnityEngine; // Unity의 핵심 기능(MonoBehaviour, Vector3 등)을 위한 라이브러리
+using Newtonsoft.Json;
+using System;
+using System.IO;
+using Unity.VisualScripting;
+using UnityEngine;
 
 [Serializable] // 이 클래스를 직렬화 가능하도록 표시하는 어트리뷰트
 // 플레이어의 스탯(능력치) 정보를 담는 데이터 클래스

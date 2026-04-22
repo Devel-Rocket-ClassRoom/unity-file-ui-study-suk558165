@@ -1,5 +1,5 @@
-using UnityEngine; // Unity 엔진 기본 기능 사용
-using UnityEngine.UI; // Unity 기본 UI 컴포넌트 (Toggle, Button 등) 사용
+using UnityEngine;
+using UnityEngine.UI;
 
 public class DifficultyWindow : GenericWindow // 난이도 선택 창을 담당하는 클래스 (GenericWindow 상속)
 {

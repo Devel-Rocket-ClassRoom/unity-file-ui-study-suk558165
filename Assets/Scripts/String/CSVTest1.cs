@@ -1,7 +1,7 @@
-using UnityEngine; // Unity 엔진 기본 기능 사용
-using CsvHelper; // CSV 파일 파싱 라이브러리 사용
-using System.IO; // 파일 및 스트림 입출력 기능 사용
-using System.Globalization; // 문화권(로케일) 설정 기능 사용
+using UnityEngine;
+using CsvHelper;
+using System.IO;
+using System.Globalization;
 
 
 public class CSVData // CSV 한 행의 데이터를 담는 클래스

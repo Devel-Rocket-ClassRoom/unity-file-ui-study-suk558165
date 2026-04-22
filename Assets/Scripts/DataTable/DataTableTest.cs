@@ -1,4 +1,4 @@
-using UnityEngine; // Unity 핵심 엔진 라이브러리 (MonoBehaviour, Input 등)
+using UnityEngine;
 
 public class DataTableTest : MonoBehaviour // 키 입력 및 버튼으로 언어를 변경하는 테스트 컴포넌트
 {

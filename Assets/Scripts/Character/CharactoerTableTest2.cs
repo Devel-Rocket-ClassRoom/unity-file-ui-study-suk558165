@@ -1,6 +1,6 @@
-using UnityEngine; // Unity 핵심 엔진 라이브러리
-using UnityEngine.UI; // Unity UI 컴포넌트 라이브러리 (Image, Button 등)
-using TMPro; // TextMeshPro UI 텍스트 컴포넌트 라이브러리
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class CharactoerTableTest2 : MonoBehaviour // 여러 캐릭터 버튼과 상세 정보 패널을 함께 관리하는 테스트 컴포넌트
 {

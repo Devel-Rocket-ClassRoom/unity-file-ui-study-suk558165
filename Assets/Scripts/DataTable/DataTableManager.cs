@@ -1,5 +1,5 @@
-using System.Collections.Generic; // 제네릭 컬렉션(Dictionary 등) 라이브러리
-using UnityEngine; // Unity 핵심 엔진 라이브러리 (Object, Debug 등)
+using System.Collections.Generic;
+using UnityEngine;
 
 public static class DataTableManager // 모든 데이터 테이블을 초기화하고 관리하는 전역 정적 클래스
 {

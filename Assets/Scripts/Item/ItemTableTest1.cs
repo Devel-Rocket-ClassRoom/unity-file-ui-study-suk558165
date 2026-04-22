@@ -1,6 +1,6 @@
-using Unity.VisualScripting; // Unity 비주얼 스크립팅 연동 기능 사용을 위한 네임스페이스
-using UnityEngine; // Unity 엔진 기본 기능 사용을 위한 네임스페이스
-using UnityEngine.UI; // Unity UI 컴포넌트(Image, Button 등) 사용을 위한 네임스페이스
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.UI;
 
 // 아이템 ID를 기반으로 아이콘과 이름을 UI에 표시하는 테스트 클래스
 public class ItemTableTest1 : MonoBehaviour

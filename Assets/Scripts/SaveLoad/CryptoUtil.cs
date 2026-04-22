@@ -1,7 +1,7 @@
-using System; // 기본 .NET 시스템 라이브러리 (Convert 등)
-using System.IO; // 파일/스트림 입출력 라이브러리
-using System.Security.Cryptography; // AES 등 암호화 알고리즘 라이브러리
-using System.Text; // 문자열 인코딩 라이브러리 (UTF-8 등)
+using System;
+using System.IO;
+using System.Security.Cryptography;
+using System.Text;
 
 // AES-256 CBC 방식으로 문자열을 암호화/복호화하는 유틸리티 정적 클래스
 public static class CryptoUtil

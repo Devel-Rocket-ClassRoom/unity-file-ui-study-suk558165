@@ -1,4 +1,4 @@
-using UnityEngine; // Unity의 핵심 기능(MonoBehaviour, Transform 등)을 위한 라이브러리
+using UnityEngine;
 
 // 씬에 배치된 테스트 오브젝트의 저장/복원 기능을 담당하는 MonoBehaviour 클래스
 public class JsonTestObject : MonoBehaviour

@@ -1,5 +1,5 @@
-using System; // 기본 .NET 시스템 라이브러리 (Serializable 어트리뷰트 등)
-using System.Collections.Generic; // 제네릭 컬렉션 라이브러리 (List<T> 등)
+using System;
+using System.Collections.Generic;
 
 [System.Serializable] // JSON 직렬화/역직렬화 가능하도록 표시
 // 모든 세이브 데이터 버전의 공통 기반이 되는 추상 클래스

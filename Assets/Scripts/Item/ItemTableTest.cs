@@ -1,4 +1,4 @@
-using UnityEngine; // Unity 엔진 기본 기능 사용을 위한 네임스페이스
+using UnityEngine;
 
 // 아이템 테이블 데이터를 디버그 출력으로 확인하는 테스트 클래스
 public class ItemTableTest : MonoBehaviour

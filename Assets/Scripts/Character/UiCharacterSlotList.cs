@@ -90,10 +90,6 @@ public class UiCharacterSlotList : MonoBehaviour
     }
 
     // 오브젝트가 비활성화될 때 캐릭터 데이터 목록을 해제하는 메서드
-    private void OnDisable()
-    {
-        saveCharacterDataList = null; // 비활성화 시 캐릭터 데이터 목록 참조를 해제
-    }
 
     // 현재 정렬 옵션을 가져오거나 변경 시 슬롯을 자동 갱신하는 프로퍼티
     public SortingOptions Sorting

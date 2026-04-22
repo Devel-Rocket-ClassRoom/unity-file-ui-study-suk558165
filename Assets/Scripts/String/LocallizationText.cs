@@ -1,5 +1,5 @@
-using TMPro; // TextMeshPro UI 컴포넌트 사용
-using UnityEngine; // Unity 엔진 기본 기능 사용
+using TMPro;
+using UnityEngine;
 
 [ExecuteInEditMode] // 에디터 모드에서도 스크립트가 실행되도록 설정
 public class LocallizationText : MonoBehaviour // 다국어 지원 텍스트 컴포넌트

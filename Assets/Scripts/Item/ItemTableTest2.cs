@@ -1,5 +1,5 @@
-using UnityEngine; // Unity 엔진 기본 기능 사용을 위한 네임스페이스
-using UnityEngine.UI; // Unity UI 컴포넌트(Image 등) 사용을 위한 네임스페이스
+using UnityEngine;
+using UnityEngine.UI;
 
 // 아이템 상세 정보(아이콘, 이름, 설명)를 UI에 표시하는 테스트 클래스
 public class ItemTableTest2 : MonoBehaviour

@@ -1,7 +1,7 @@
-using Newtonsoft.Json; // JSON 직렬화/역직렬화를 위한 Newtonsoft.Json 라이브러리
-using System.Collections.Generic; // List 등 제네릭 컬렉션을 위한 라이브러리
-using System.IO; // 파일 입출력(읽기/쓰기/경로) 기능을 위한 라이브러리
-using UnityEngine; // Unity의 핵심 기능(MonoBehaviour, Vector3 등)을 위한 라이브러리
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
 
 [System.Serializable] // 이 클래스를 직렬화 가능하도록 표시하는 어트리뷰트
 // 씬 오브젝트의 트랜스폼과 색상 데이터를 저장하는 데이터 클래스

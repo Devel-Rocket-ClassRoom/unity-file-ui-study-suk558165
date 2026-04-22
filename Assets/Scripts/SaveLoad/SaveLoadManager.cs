@@ -1,7 +1,7 @@
-using Newtonsoft.Json; // Json.NET 라이브러리 — JSON 직렬화/역직렬화 지원
-using System.IO; // 파일 및 디렉토리 입출력 라이브러리
-using UnityEngine; // Unity 엔진 핵심 라이브러리 (Application, Debug 등)
-using SaveDataVC = SaveDataV6; // 현재 최신 세이브 데이터 버전을 SaveDataVC라는 별칭으로 사용
+using Newtonsoft.Json;
+using System.IO;
+using UnityEngine;
+using SaveDataVC = SaveDataV6;
 
 // 세이브 파일 저장 형식을 결정하는 열거형
 public enum SaveMode

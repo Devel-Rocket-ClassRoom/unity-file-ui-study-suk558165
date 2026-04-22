@@ -1,7 +1,7 @@
-using System.Collections.Generic; // 딕셔너리 등 제네릭 컬렉션을 사용하기 위한 라이브러리
-using System.IO; // 파일 입출력(읽기/쓰기/경로) 기능을 위한 라이브러리
-using UnityEditor.SceneManagement; // Unity 에디터의 씬 관리 기능을 위한 라이브러리
-using UnityEngine; // Unity의 핵심 기능(MonoBehaviour, Vector3 등)을 위한 라이브러리
+using System.Collections.Generic;
+using System.IO;
+using UnityEditor.SceneManagement;
+using UnityEngine;
 
 // 플레이어 정보를 담는 데이터 클래스
 public class PlayerInfo

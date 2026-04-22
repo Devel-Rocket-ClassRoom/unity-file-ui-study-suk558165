@@ -1,5 +1,5 @@
-using UnityEngine; // Unity 엔진 기본 기능 사용
-using UnityEngine.UI; // Unity UI 버튼 등 기본 UI 컴포넌트 사용
+using UnityEngine;
+using UnityEngine.UI;
 
 public class StartWindow : GenericWindow // 시작 화면 창을 담당하는 클래스 (GenericWindow 상속)
 {

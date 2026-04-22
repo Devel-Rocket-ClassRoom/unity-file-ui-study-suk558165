@@ -1,8 +1,8 @@
-using UnityEngine; // Unity 엔진 기본 기능 사용
-using UnityEngine.EventSystems; // UI 이벤트 시스템 기능 사용
-using TMPro; // TextMeshPro UI 텍스트 컴포넌트 사용
-using UnityEngine.UI; // Unity 기본 UI 버튼 컴포넌트 사용
-using System.Collections; // 코루틴(IEnumerator) 사용
+using UnityEngine;
+using UnityEngine.EventSystems;
+using TMPro;
+using UnityEngine.UI;
+using System.Collections;
 
 public class GameOverWindow : GenericWindow // 게임 오버 화면을 담당하는 클래스 (GenericWindow 상속)
 {

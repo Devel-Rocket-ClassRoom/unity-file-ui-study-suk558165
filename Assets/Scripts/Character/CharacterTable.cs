@@ -1,5 +1,5 @@
-using System.Collections.Generic; // 제네릭 컬렉션(Dictionary, List 등) 라이브러리
-using UnityEngine; // Unity 핵심 엔진 라이브러리 (Sprite, Debug 등)
+using System.Collections.Generic;
+using UnityEngine;
 
 public class CharacterData // 캐릭터 한 명의 데이터를 담는 데이터 클래스
 {

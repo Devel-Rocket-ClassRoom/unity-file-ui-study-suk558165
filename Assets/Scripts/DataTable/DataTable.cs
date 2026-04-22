@@ -1,9 +1,9 @@
-using CsvHelper; // CSV 파일 파싱을 위한 CsvHelper 라이브러리
-using CsvHelper.Configuration; // CsvHelper 설정 클래스 라이브러리
-using System.Collections.Generic; // 제네릭 컬렉션(List 등) 라이브러리
-using System.Globalization; // 문화권/로케일 정보 라이브러리 (CultureInfo)
-using System.IO; // 파일 및 스트림 입출력 라이브러리 (StringReader)
-using System.Linq; // LINQ 쿼리 확장 메서드 라이브러리 (ToList)
+using CsvHelper;
+using CsvHelper.Configuration;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Linq;
 
 public abstract class DataTable // 모든 데이터 테이블의 공통 기반이 되는 추상 클래스
 {
