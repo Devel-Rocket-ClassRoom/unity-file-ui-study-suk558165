@@ -14,15 +14,12 @@ public class SaveCharacterData
 
     public DateTime creationTime; // 캐릭터를 획득한 시각
 
-<<<<<<< HEAD
     [JsonProperty(NullValueHandling = NullValueHandling.Ignore)] // null이면 JSON에서 해당 필드를 생략
     public SaveItemData weaponSlot; // 착용 중인 무기 슬롯 데이터 (미착용 시 null)
 
     [JsonProperty(NullValueHandling = NullValueHandling.Ignore)] // null이면 JSON에서 해당 필드를 생략
     public SaveItemData equipSlot; // 착용 중인 장비 슬롯 데이터 (미착용 시 null)
 
-=======
->>>>>>> ac335ae9d04564330e8933454b073a144641c6c6
     // 데이터 테이블에서 무작위 캐릭터를 선택하여 SaveCharacterData 인스턴스를 생성하는 정적 팩토리 메서드
     public static SaveCharacterData GetRandomCharacter()
     {
@@ -44,4 +41,3 @@ public class SaveCharacterData
         return $"{instanceId}\n{creationTime}\n{characterData.Id}"; // instanceId, 획득 시각, 캐릭터 ID를 줄바꿈으로 구분하여 반환
     }
 }
-

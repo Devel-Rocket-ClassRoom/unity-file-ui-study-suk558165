@@ -8,21 +8,22 @@ public class UiCharacterEquipSlot : MonoBehaviour
     public Image imageIcon;        // 착용 아이템 아이콘을 표시할 Image 컴포넌트
     public Button button;          // 슬롯 클릭 이벤트를 처리할 버튼 컴포넌트
     public UnityEvent onClickSlot; // 슬롯 버튼 클릭 시 발생하는 이벤트
+    public Sprite emptySprite;     // 아이템 미착용 시 표시할 기본 스프라이트
 
     private void Awake()
     {
-        button.onClick.AddListener(() => onClickSlot.Invoke()); // 버튼 클릭을 onClickSlot 이벤트로 전달
+        button.onClick.AddListener(() => onClickSlot.Invoke());
     }
 
-    // 아이템 데이터를 받아 슬롯 아이콘을 설정하는 메서드 (null이면 빈 슬롯 표시)
+    // 아이템 데이터를 받아 슬롯 아이콘을 설정하는 메서드 (null이면 기본 스프라이트 표시)
     public void Set(SaveItemData data)
     {
-        imageIcon.sprite = data?.itemData.SpriteIcon;
+        imageIcon.sprite = data?.itemData.SpriteIcon ?? emptySprite;
     }
 
     // 슬롯을 빈 상태로 초기화하는 메서드
     public void SetEmpty()
     {
-        imageIcon.sprite = null;
+        imageIcon.sprite = emptySprite;
     }
 }

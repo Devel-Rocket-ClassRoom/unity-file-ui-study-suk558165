@@ -73,8 +73,7 @@ public class UiCharacterSlotList : MonoBehaviour
     private void Start()
     {
         if (uiCharacterInfo == null) return;
-        onSelectSlot.AddListener(uiCharacterInfo.SetSaveCharacterData); // 슬롯 선택 이벤트에 상세 정보 표시 메서드를 연결
-        onUpdateSlots.AddListener(uiCharacterInfo.SetEmpty);            // 슬롯 목록 갱신 이벤트에 상세 정보 초기화 메서드를 연결
+        onSelectSlot.AddListener(uiCharacterInfo.SetSaveCharacterData);
     }
 
     // 외부에서 캐릭터 데이터 목록을 설정하고 슬롯을 갱신하는 메서드
@@ -127,6 +126,7 @@ public class UiCharacterSlotList : MonoBehaviour
     // 현재 필터링·정렬 옵션을 적용하여 슬롯 목록 UI를 갱신하는 메서드
     private void UpdateSlots()
     {
+        if (saveCharacterDataList == null) return;
         var list = saveCharacterDataList.Where(filterings[(int)filtering]).ToList(); // 현재 필터링 조건에 맞는 캐릭터만 추출
         list.Sort(comparisons[(int)sorting]); // 현재 정렬 비교 함수로 리스트를 정렬
 
@@ -170,15 +170,16 @@ public class UiCharacterSlotList : MonoBehaviour
     // 랜덤 캐릭터를 획득하여 목록에 추가하고 슬롯을 갱신하는 메서드
     public void AddRandomCharacter()
     {
-        saveCharacterDataList.Add(SaveCharacterData.GetRandomCharacter()); // 랜덤 캐릭터 데이터를 생성하여 목록에 추가
-        UpdateSlots(); // 추가된 캐릭터를 반영하여 슬롯 UI를 갱신
+        if (saveCharacterDataList == null) saveCharacterDataList = new System.Collections.Generic.List<SaveCharacterData>();
+        saveCharacterDataList.Add(SaveCharacterData.GetRandomCharacter());
+        UpdateSlots();
     }
 
     // 현재 선택된 슬롯의 캐릭터를 목록에서 제거하는 메서드
     public void RemoveCharacter()
     {
-        if (selectedSlotIndex == -1) return; // 선택된 슬롯이 없으면 처리하지 않음
-        saveCharacterDataList.Remove(uiSlotList[selectedSlotIndex].SaveCharacterData); // 선택된 슬롯의 캐릭터 데이터를 목록에서 제거
-        UpdateSlots(); // 제거 후 슬롯 UI를 갱신
+        if (selectedSlotIndex == -1 || saveCharacterDataList == null) return;
+        saveCharacterDataList.Remove(uiSlotList[selectedSlotIndex].SaveCharacterData);
+        UpdateSlots();
     }
 }

@@ -1,5 +1,5 @@
 ﻿Id,Name,JOB,Attack,Dffend,Health,Icon
 class1,Char1Name,Char1Job,20,20,100,Char_Warrior
-class2,Char2Name,Char2Job,5,5,100,Char_Thief
+class2,Char2Name,Char2Job,5,5,100,Char_Mage
 class3,Char3Name,Char3Job,10,5,100,Char_Archer
-class4,Char4Name,Char4Job,15,5,100,Char_Mage
+class4,Char4Name,Char4Job,15,5,100,Char_Thief
